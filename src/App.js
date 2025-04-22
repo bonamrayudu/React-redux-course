@@ -1,23 +1,55 @@
 
 import './App.css';
+import 'bulma/css/bulma.css';
+import AlexaImage from './images/alexa.png';
+import CortanaImage from './images/cortana.png';
+import SiriImage from './images/siri.png';
+import Example1 from './Components/Example1'
+import Colors from './Components/Colors'
+import Profiles from './Components/Profiles';
 
 function App() {
-  let numbers=Math.random()* 10
-let message= "Below 5"
-  if (numbers>5){
-  message="Above 5"
-  console.log(numbers);
-  // let date= new Date()
-  // var time= date.toLocaleTimeString();
-  
-  }
   return (
-    <div className="App">
-      <h1>{message}</h1>
-      <h1>{numbers}</h1>
-      <h1>{new Date().toLocaleTimeString()}</h1>
+    <div>
+      <section className="hero is-primary">
+        <div className="hero-body">
+          <p className="title">Personal Digital Assistants</p>
+        </div>
+      </section>
+
+      <div className="container">
+        <section className="section">
+          <div className="columns">
+            <div className="column is-3">
+              <Profiles
+                title="Alexa"
+                handle="@alexa99"
+                image={AlexaImage}
+                description="Alexa was created by Amazon and helps you buy things."
+              />
+            </div>
+            <div className="column is-3">
+              <Profiles
+                title="Cortana"
+                handle="@cortana32"
+                image={CortanaImage}
+                description="Cortana was made by Microsoft. Who knows what it does?"
+              />
+            </div>
+            <div className="column is-3">
+              <Profiles
+                title="Siri"
+                handle="@siri01"
+                image={SiriImage}
+                description="Siri was made by Apple and is being phased out"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
   );
 }
 
 export default App;
+
