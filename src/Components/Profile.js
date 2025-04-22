@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Profiles({title,image,handle,description}) {
+export default function Profile({title,image,handle,description}) {
     return (
         <div className='card'>
             <div className='card-image'>
