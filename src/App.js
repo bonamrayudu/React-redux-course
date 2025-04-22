@@ -6,7 +6,7 @@ import CortanaImage from './images/cortana.png';
 import SiriImage from './images/siri.png';
 import Example1 from './Components/Example1'
 import Colors from './Components/Colors'
-import Profiles from './Components/Profiles';
+import Profile from './Components/Profile';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
         <section className="section">
           <div className="columns">
             <div className="column is-3">
-              <Profiles
+              <Profile
                 title="Alexa"
                 handle="@alexa99"
                 image={AlexaImage}
@@ -29,7 +29,7 @@ function App() {
               />
             </div>
             <div className="column is-3">
-              <Profiles
+              <Profile
                 title="Cortana"
                 handle="@cortana32"
                 image={CortanaImage}
@@ -37,7 +37,7 @@ function App() {
               />
             </div>
             <div className="column is-3">
-              <Profiles
+              <Profile
                 title="Siri"
                 handle="@siri01"
                 image={SiriImage}
